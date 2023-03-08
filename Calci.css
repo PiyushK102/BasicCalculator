@@ -1,0 +1,68 @@
+body{
+    background-image:radial-gradient(red,orange,yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#outerbody{
+    background-color: rgba(194, 255, 243, 0.73);
+    width:50%;
+    height:50vh;
+    margin:0 25% 0 25%;
+    padding:5% 0 5% 0;
+    align-items: center;
+    border:2px solid black;
+    border-radius: 10px;
+}
+#result{
+    background-color: rgb(109, 114, 215);
+    width:88.5%;
+    height:20%;
+    margin: 0 5% 0 5%;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 10px;;
+}
+#keypaddiv{
+    height:70%;
+    width:90%;
+    margin: 5% 5% 5% 5%;
+    padding:3px 0 3px 0;
+    background-color: transparent;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    vertical-align: center;
+
+}
+#buttons{
+    width:22.7%;
+    height:50px;
+    margin:3px;
+    background-color: black;
+    color: aliceblue;
+    border-radius:10px;
+    border: none;
+    font-weight: bolder;
+    font-size: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+#buttons:hover{
+    background-color: bisque;
+    color:black;
+}
+h1{
+    text-align: center;
+}
+@media screen and (max-width:900px) {
+
+    #buttons{
+    width:40px;
+    height:50px;
+   
+}
+}
