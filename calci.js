@@ -1,13 +1,13 @@
 function append(value){
-    document.getElementById('result').value+=value;
+    document.getElementById('result').innerHTML+=value;
 }
 function clearInput(){
     document.getElementById('result').value="";
 }
 function calculate(){
-    var ans=eval(document.getElementById('result').value);
+    var ans=eval(document.getElementById('result').innerText);
     document.getElementById('result').value=ans;
 }
 function backspace(){
-    document.getElementById('result').value=document.getElementById('result').value.slice(0,(value.length-1))
+    document.getElementById('result').innerHTML=document.getElementById('result').innerText.slice(0,(result.innerText.length-1))
 }
