@@ -12,31 +12,41 @@
 <body>
     <h1>Basic Calculator</h1>
     <div id="outerbody">
-        <!-- <div id="screendiv" value="54"></div> -->
-        <div id="result"></div>
-        <div id="keypaddiv">
-        <input id="buttons"type="button" value="7" onclick="append('7')">
-		<input id="buttons"type="button" value="8" onclick="append('8')">
-		<input id="buttons"type="button" value="9" onclick="append('9')">
-       
-		<input id="buttons"type="button" value="/" onclick="append('/')" style="background-color: rgb(89, 242, 62);">
-        <br>
-		<input id="buttons"type="button" value="4" onclick="append('4')">
-		<input id="buttons"type="button" value="5" onclick="append('5')">
-		<input id="buttons"type="button" value="6" onclick="append('6')">
-		<input id="buttons"type="button" value="*" onclick="append('*')"style="background-color: rgb(25,100,255);">
-        <br>
-		<input id="buttons"type="button" value="1" onclick="append('1')">
-		<input id="buttons"type="button" value="2" onclick="append('2')">
-		<input id="buttons"type="button" value="3" onclick="append('3')">
-		<input id="buttons"type="button" value="-" onclick="append('-')"style="background-color: magenta;">
-        <br>
-		<input id="buttons"type="button" value="0" onclick="append('0')">
-		<input id="buttons"type="button" value="C" onclick="clearInput()">
-		<input id="buttons"type="button" value="+" onclick="append('+')"style="background-color:#ff9933;">
-		<input id="buttons"type="button" value="=" onclick="calculate()"style="background-color: red;">
-        <button id="buttons" onclick="backspace()">←</button>
-        </div>
+      <div id="result"></div>
+        <table id="keypaddiv">
+            <tr>
+                <td><button id="buttons" onclick="clearInput()">C</button></td>
+                <td><button id="buttons" onclick="backspace()">←</button></td>
+                <td><button id="buttons" onclick="cbrt()">∛</button></td>
+                <td><button id="buttons" onclick="append('+')" style="background-color: red;">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('7')">7</button></td>
+		        <td><button id="buttons" onclick="append('8')">8</button></td>
+		        <td><button id="buttons" onclick="append('9')">9</button></td>
+                <td><button id="buttons" onclick="append('/')" style="background-color: rgb(89, 242, 62);">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('4')">4</button></td>
+		        <td><button id="buttons" onclick="append('5')">5</button></td>
+		        <td><button id="buttons" onclick="append('6')">6</button></td>
+                <td><button id="buttons" onclick="append('*')" style="background-color: rgb(25,100,255);">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('1')">1</button></td>
+		        <td><button id="buttons" onclick="append('2')">2</button></td>
+		        <td><button id="buttons" onclick="append('3')">3</button></td>
+                <td><button id="buttons" onclick="append('-')"style="background-color: magenta;">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('.')">.</button></td>
+		        <td><button id="buttons" onclick="append('0')">0</button></td>
+		        <td><button id="buttons" onclick="sqrt()">√</button></td>
+                <td><button id="buttons" onclick="calculate()"style="background-color:#ff9933;">=</button></td>
+
+                
+            </tr>
+        </table>
     </div>
     
 </body>

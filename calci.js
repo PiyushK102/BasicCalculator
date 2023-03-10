@@ -11,3 +11,9 @@ function calculate(){
 function backspace(){
     document.getElementById('result').innerHTML=document.getElementById('result').innerHTML.slice(0,(result.innerHTML.length-1))
 }
+function sqrt(){
+    document.getElementById('result').innerHTML=Math.sqrt(document.getElementById('result').innerHTML);
+}
+function cbrt(){
+    document.getElementById('result').innerHTML=Math.cbrt(document.getElementById('result').innerHTML);
+}
