@@ -22,7 +22,9 @@ body{
     font-size: 28px;
     text-align: center;
     vertical-align: center;
-    border-radius: 10px;;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
 }
 #keypaddiv{
     height:70%;
