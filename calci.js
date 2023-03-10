@@ -8,3 +8,6 @@ function calculate(){
     var ans=eval(document.getElementById('result').value);
     document.getElementById('result').value=ans;
 }
+function backspace(){
+    document.getElementById('result').value=value.slice(0,(value.length-1))
+}
