@@ -1,14 +1,6 @@
 function append(value){
-    if(value!='^'){
         
-        document.getElementById('result').innerHTML+=value;
-        var show=document.getElementById('result').innerHTML
-        var cal=document.getElementById('result').innerHTML
-    }
-    else{
-        var show=document.getElementById('result').innerHTML+='^'
-        var cal=document.getElementById('result').innerHTML+='**'
-    }
+    document.getElementById('result').innerHTML+=value;
 }
 function clearInput(){
     document.getElementById('result').innerHTML="";
@@ -23,6 +15,6 @@ function backspace(){
 function sqrt(){
     document.getElementById('result').innerHTML=Math.sqrt(document.getElementById('result').innerHTML);
 }
-function cbrt(){
+function power(){
     document.getElementById('result').innerHTML=Math.cbrt(document.getElementById('result').innerHTML);
 }
