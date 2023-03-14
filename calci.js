@@ -1,11 +1,20 @@
 function append(value){
-    document.getElementById('result').innerHTML+=value;
+    if(value!='^'){
+        
+        document.getElementById('result').innerHTML+=value;
+        var show=document.getElementById('result').innerHTML
+        var cal=document.getElementById('result').innerHTML
+    }
+    else{
+        var show=document.getElementById('result').innerHTML+='^'
+        var cal=document.getElementById('result').innerHTML+='**'
+    }
 }
 function clearInput(){
     document.getElementById('result').innerHTML="";
 }
 function calculate(){
-    var ans=eval(document.getElementById('result').innerHTML);
+    var ans=eval(cal);
     document.getElementById('result').innerHTML=ans;
 }
 function backspace(){
