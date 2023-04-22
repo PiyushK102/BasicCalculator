@@ -27,6 +27,7 @@ body{
     border-radius: 10px;
     border:solid 3px black;
     box-shadow: 2px 4px 4px 4px grey;
+    word-wrap: break-word;
 }
 #keypaddiv{
     height:70%;
