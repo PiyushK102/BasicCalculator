@@ -28,6 +28,7 @@ body{
     border:solid 3px black;
     box-shadow: 2px 4px 4px 4px grey;
     word-wrap: break-word;
+    overflow-y:scroll;
 }
 #keypaddiv{
     height:70%;
