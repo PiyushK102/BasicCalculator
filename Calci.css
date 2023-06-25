@@ -76,16 +76,6 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
 }
-#numpad{
-    width:70%;
-}
-#operators{
-  width:20%;  
-}
-#specialkeys{
-    display:flex;
-    flex-direction: row;
-}
 ::-webkit-scrollbar{
     width: 4px;
     height:5px;
@@ -128,8 +118,8 @@ h1{
     }
 
     #buttons{
-        width:30px;
-        height:30px;
+        width:100%;
+        height:100%;
         font-size:14;
         font-weight: 300;
         overflow: hidden;
