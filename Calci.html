@@ -8,42 +8,46 @@
     <link rel="stylesheet" href="Calci.css">
     <script src="calci.js"></script>
     <link rel="shortcut icon" href="project.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <h1>Basic Calculator</h1>
     <!-- <input type="range" min="0" max="1" value="1" style="width:20px;"> -->
     <div id="outerbody">
-      <div id="result"></div>
+      <div id="result" contenteditable="1"></div>
         <table id="keypaddiv">
             <tr>
-                <td><button id="buttons" onclick="clearInput()" >C</button></td>
-                <td><button id="buttons" onclick="backspace()">←</button></td>
-                <td><button id="buttons" onclick="append('^')">^</button></td>
-                <td><button id="buttons" onclick="append('+')" style="background-color: red;">+</button></td>
+                <td><button id="buttons" onclick="clearInput()" style="background-color: rgb(216, 0, 0);" >C</button></td>
+                <td><button id="buttons" onclick="append('(')" >(</button></td>
+                <td><button id="buttons" onclick="append(')')">)</button></td>
+                <td><button id="buttons" onclick="backspace()" style="background-color: rgb(255, 0, 0);"> <span class="material-symbols-rounded">backspace</span></button></td>
+                <td rowspan="3"><button id="buttons" onclick="append('+')" style="background-color: rgb(8, 169, 255); border-radius: 20px;">+</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('7')">7</button></td>
 		        <td><button id="buttons" onclick="append('8')">8</button></td>
 		        <td><button id="buttons" onclick="append('9')">9</button></td>
-                <td><button id="buttons" onclick="append('/')" style="background-color: rgb(89, 242, 62);">/</button></td>
+                <td><button id="buttons" onclick="append('/')" style="background-color: rgb(8, 169, 255);">/</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('4')">4</button></td>
 		        <td><button id="buttons" onclick="append('5')">5</button></td>
 		        <td><button id="buttons" onclick="append('6')">6</button></td>
-                <td><button id="buttons" onclick="append('*')" style="background-color: rgb(25,100,255);">*</button></td>
+                <td><button id="buttons" onclick="append('*')" style="background-color: rgb(8, 169, 255);">*</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('1')">1</button></td>
 		        <td><button id="buttons" onclick="append('2')">2</button></td>
 		        <td><button id="buttons" onclick="append('3')">3</button></td>
-                <td><button id="buttons" onclick="append('-')"style="background-color: magenta;">-</button></td>
+                <td><button id="buttons" onclick="append('-')"style="background-color: rgb(8, 169, 255);">-</button></td>
+                <td rowspan="2"><button id="buttons" onclick="calculate()"style="background-color:rgb(12,250,50);border-radius: 20px;">=</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('.')">.</button></td>
 		        <td><button id="buttons" onclick="append('0')">0</button></td>
 		        <td><button id="buttons" onclick="sqrt()">√</button></td>
-                <td><button id="buttons" onclick="calculate()"style="background-color:#ff9933;">=</button></td>
+                <td><button id="buttons" onclick="append('^')" style="background-color:rgb(8, 169, 255);">^</button></td>
+                
 
                 
             </tr>

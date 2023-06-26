@@ -88,5 +88,11 @@ document.addEventListener("keydown", e =>{
         case ".":
             append(".")
             break
+        case "(":
+            append("(")
+            break
+        case ")":
+            append(")")
+            break
     }   
 })
