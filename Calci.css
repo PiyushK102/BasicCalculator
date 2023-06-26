@@ -15,6 +15,7 @@ body{
     border:3px solid black;
     border-radius: 10px;
     box-shadow: inset 0px 0px 4px 4px grey;
+    z-index: 50;
 }
 .material-symbols-rounded {
     font-variation-settings:
@@ -23,6 +24,34 @@ body{
     'GRAD' 0,
     'opsz' 48;
 }
+#instructions{
+    display:block;
+    position: fixed;
+    inset:10% auto auto 5px;
+}
+#toggleins{
+    display:block;
+    position:absolute;
+    inset:10% auto auto 5px;
+}
+#points{
+    display: none;
+    position:relative;
+    inset:10% auto auto 5px;
+    background-color: aliceblue;
+    /* background-image:linear-gradient(45deg,red ,green, yellow); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%); */
+    width: 40vw;
+    height: fit-content;
+    padding:10px;
+    text-align: left;
+    color:rgb(148, 147, 147);
+    word-wrap: break-word;
+    border:2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px rgba(128, 128, 128, 0.488);
+}
+#toggleins:hover + #points,#points:hover{display:block}
 #result{
     background-color: rgb(109, 114, 215);
     width:90%;
@@ -112,6 +141,15 @@ h1{
         height:100%;
         font-size: 18;
    
+    }
+    #instructions{
+        width: fit-content;
+        height: fit-content;
+        word-wrap: break-word;
+        
+    }
+    #points{
+        width:50vw;
     }
 }
 @media screen and (max-height:530px) {
