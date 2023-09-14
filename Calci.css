@@ -184,13 +184,21 @@ h1{
 }
 @media screen and (max-height:530px) {
     #outerbody{
-
-        width:75%;
+        flex-direction: row;
+        width:100%;
         height:70vh;
         margin:0 12.5% 0 12.5%;
        
     }
-
+    #keypad{
+        width:50%;
+        height:70vh;
+        overflow-y: scroll;
+    } 
+    #result{
+        width:50%;
+        height:70vh;
+    }
     #buttons{
         width:40px;
         height:40px;
