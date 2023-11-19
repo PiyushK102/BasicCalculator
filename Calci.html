@@ -16,21 +16,23 @@
     
     <!-- <input type="range" min="0" max="1" value="1" style="width:20px;"> -->
     <div id="outerbody">
-      <div id="result" contenteditable="true"></div>
-      <div id="keypad">
         <table id="keypaddiv">
+            <tr><div id="result" contenteditable="1" colspan="5"></div></tr>
+            <br>
+            <hr>
             <tr>
                 <td><button id="buttons" onclick="clearInput()" style="background-color: rgb(216, 0, 0);" >C</button></td>
                 <td><button id="buttons" onclick="append('(')" >(</button></td>
                 <td><button id="buttons" onclick="append(')')">)</button></td>
+                <td ><button id="buttons" onclick="append('+')" style="background-color: rgb(8, 169, 255);">+</button></td>
                 <td><button id="buttons" onclick="backspace()" style="background-color: rgb(255, 0, 0);"> <span class="material-symbols-rounded">backspace</span></button></td>
-                <td rowspan="3"><button id="buttons" onclick="append('+')" style="background-color: rgb(8, 169, 255); border-radius: 20px;">+</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('7')">7</button></td>
 		        <td><button id="buttons" onclick="append('8')">8</button></td>
 		        <td><button id="buttons" onclick="append('9')">9</button></td>
                 <td><button id="buttons" onclick="append('/')" style="background-color: rgb(8, 169, 255);">/</button></td>
+                <td rowspan="4" style="border-radius: 20px;"><button id="buttons" onclick="calculate()"style="background-color:rgb(12,250,50);border-radius: 30px;">=</button></td>
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('4')">4</button></td>
@@ -43,24 +45,25 @@
 		        <td><button id="buttons" onclick="append('2')">2</button></td>
 		        <td><button id="buttons" onclick="append('3')">3</button></td>
                 <td><button id="buttons" onclick="append('-')"style="background-color: rgb(8, 169, 255);">-</button></td>
-                <td rowspan="2" style="border-radius: 20px;"><button id="buttons" onclick="calculate()"style="background-color:rgb(12,250,50);border-radius: 20px;">=</button></td>
+                
             </tr>
             <tr>
                 <td><button id="buttons" onclick="append('.')">.</button></td>
 		        <td><button id="buttons" onclick="append('0')">0</button></td>
-		        <td><button id="buttons" onclick="sqrt()">√</button></td>
+		        <td><button id="buttons" onclick="sqrt()"><b>√</b></button></td>
                 <td><button id="buttons" onclick="append('^')" style="background-color:rgb(8, 169, 255);">^</button></td>
             </tr>
         </table>
-      </div> 
+        
     </div>
     <div id="instructions">
         <div id="toggleins"><span class="material-symbols-rounded">developer_guide</span><br>Guide</div>
         <div id="points">
             <h6 style="text-align: center;font-size: 12px;">*** Instructions ***</h6>
+            <hr>
             <li> Use 'C' for clearing input. </li>
-            <li> Use 'S' for Square root of the number present on Display of Calculator.</li>
-            <li> Use 'Backspace' for clearing the number present on Display of Calculator one by one.</li>
+            <li> Use 'S' for Square root of the number<br>&ensp;&ensp; present on Display of Calculator.</li>
+            <li> Use 'Backspace' for clearing the number <br>&ensp;&ensp; represent on Display of Calculator one by one.</li>
             <li> Use 'Enter' or '=' for Solving the equation present on Display.</li>
         </div>
     </div>
