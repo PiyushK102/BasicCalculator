@@ -126,11 +126,6 @@ h1{
     margin:5px;
     
 }
-::-webkit-scrollbar-thumb{
-    background: white;
-    border-radius: 11px;
-
-}
 hr{
     border-color: black;
     background-color: black;
@@ -166,8 +161,8 @@ hr{
     }
     td{
         border-radius: 50%;
-        width:40px;
-        height: 40px;
+        width:20%;
+        height: 20%;
     }
     #points{
         width:50vw;
