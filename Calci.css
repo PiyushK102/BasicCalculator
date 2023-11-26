@@ -18,8 +18,8 @@ body{
     z-index: 50;
     overflow: scroll;
 }
-#outerbody ::-webkit-scrollbar-track{
-    background-color: transparent;
+#outerbody ::-webkit-scrollbar-track,#outerbody::-webkit-scrollbar{
+    display: none;
 }
 .material-symbols-rounded {
     font-variation-settings:
