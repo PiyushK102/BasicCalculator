@@ -78,6 +78,7 @@ body{
     padding:5px;
     border-radius: 10px;
     border-spacing: 5px;
+    justify-items: center;
 }
 td{
     align-items: center;
