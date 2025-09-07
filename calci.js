@@ -28,6 +28,7 @@ document.addEventListener("keydown", e =>{
     switch(e.key.toLowerCase()){
         case "1":
             append(1)
+            
             break
         case "2":
             append(2)
@@ -93,6 +94,9 @@ document.addEventListener("keydown", e =>{
             break
         case ")":
             append(")")
+            break
+        case "P":
+            append("^")
             break
     }   
 })
