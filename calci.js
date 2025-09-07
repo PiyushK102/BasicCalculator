@@ -103,9 +103,11 @@ document.addEventListener("keydown", e =>{
             append(".")
             break
         case "(":
+            case "l":
             append("(")
             break
         case ")":
+            case "r":
             append(")")
             break
         case "p":
