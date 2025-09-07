@@ -171,6 +171,7 @@ hr{
     }
     #instructions{
         width: fit-content;
+        display: none;
         height: fit-content;
         word-wrap: break-word;
         
