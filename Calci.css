@@ -39,9 +39,10 @@ body{
 #toggleins{
     display:block;
     position:absolute;
-    inset:10% auto auto 5px;
+    left:5px;
+    top:30px;
     color: aliceblue;
-    border: 5px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
     padding: 5px;
     text-align: center;
@@ -119,7 +120,7 @@ td{
 h1{
     text-align: center;
     background-color: aqua;
-    width: 500px;
+    width: 98%;
     border: 3px solid black;
     text-align: center;
     text-justify: distribute;
