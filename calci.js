@@ -23,6 +23,19 @@ function sqrt(){
     document.getElementById('result').innerHTML=Math.sqrt(document.getElementById('result').innerHTML);
 }
 
+document.addEventListener("loaded",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
+        if(winwidth<=600 && winheight<1000)
+        {
+            document.getElementById("result").contentEditable="true"
+        }
+        else{
+            document.getElementById("result").contentEditable="false"
+        }
+})
+
+
 ///////////////////////////////////////////////////------------Keyboard Control------------/////////////////////////////////////////////////////////////////
 document.addEventListener("keydown", e =>{
     switch(e.key.toLowerCase()){
@@ -99,5 +112,4 @@ document.addEventListener("keydown", e =>{
             append("^")
             break
     }   
-
 })

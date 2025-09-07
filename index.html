@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="Calci.css">
+    <script src="calci.js"></script>
+    <link rel="shortcut icon" href="project.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <!-- <div id="bgshape">.....</div> -->
+        <h1 style="border-radius: 10px;">Basic Calculator</h1>
+    
+    <!-- <input type="range" min="0" max="1" value="1" style="width:20px;"> -->
+    <div id="outerbody">
+        <table id="keypaddiv">
+            <tr><div id="result" contenteditable="false" colspan="5"></div></tr>
+            <br>
+            <hr>
+            <tr>
+                <td><button id="buttons" onclick="clearInput()" style="background-color: rgb(216, 0, 0);" >C</button></td>
+                <td><button id="buttons" onclick="append('(')" >(</button></td>
+                <td><button id="buttons" onclick="append(')')">)</button></td>
+                <td ><button id="buttons" onclick="append('+')" style="background-color: rgb(8, 169, 255);">+</button></td>
+                <td><button id="buttons" onclick="backspace()" style="background-color: rgb(255, 0, 0);"> <span class="material-symbols-rounded">backspace</span></button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('7')">7</button></td>
+		        <td><button id="buttons" onclick="append('8')">8</button></td>
+		        <td><button id="buttons" onclick="append('9')">9</button></td>
+                <td><button id="buttons" onclick="append('/')" style="background-color: rgb(8, 169, 255);">/</button></td>
+                <td rowspan="4" style="border-radius: 20px;"><button id="buttons" onclick="calculate()"style="background-color:rgb(12,250,50);border-radius: 30px;">=</button></td>
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('4')">4</button></td>
+		        <td><button id="buttons" onclick="append('5')">5</button></td>
+		        <td><button id="buttons" onclick="append('6')">6</button></td>
+                <td><button id="buttons" onclick="append('*')" style="background-color: rgb(8, 169, 255);">*</button></td>
+                <!-- <td><button id="buttons" onclick="append('%')" style="background-color: rgb(8, 169, 255);">%</button></td> -->
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('1')">1</button></td>
+		        <td><button id="buttons" onclick="append('2')">2</button></td>
+		        <td><button id="buttons" onclick="append('3')">3</button></td>
+                <td><button id="buttons" onclick="append('-')"style="background-color: rgb(8, 169, 255);">-</button></td>
+                
+            </tr>
+            <tr>
+                <td><button id="buttons" onclick="append('.')">.</button></td>
+		        <td><button id="buttons" onclick="append('0')">0</button></td>
+		        <td><button id="buttons" onclick="sqrt()"><b>√</b></button></td>
+                <td><button id="buttons" onclick="append('^')" style="background-color:rgb(8, 169, 255);">^</button></td>
+            </tr>
+        </table>
+        
+    </div>
+    <div id="instructions">
+        <div id="toggleins"><span class="material-symbols-rounded">developer_guide</span><br>Guide</div>
+        <div id="points">
+            <h6 style="text-align: center;font-size: 12px;color:black"><u>*** Instructions for using from Keyboard ***</u></h6>
+            <hr>
+            <ul>
+            <li> Use numbers from 0-9 for entering numbers. </li>
+            <li> Use 'C' for clearing everything on display. </li>
+            <li> Use 'S' for Square root of the number present on Display of Calculator.</li>
+            <li> Use 'Backspace' for clearing the number represent on Display of Calculator one by one.</li>
+            <li> Use 'Enter' or '=' for Solving the equation present on Display.</li>
+            <li> Use 'P' for "raised to power" function.</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
